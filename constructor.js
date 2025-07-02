@@ -5,7 +5,8 @@
 
 let a = {
     name: "jothikrishnan",// this is object 
-}
+    
+};
 
 function User(a){
     this.name = a;// this is constructor
@@ -17,5 +18,4 @@ let sai = new User('sai');
 
 console.log(jothikrishnan, sai);
 
-
-//////\\\\\\
+///
