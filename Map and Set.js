@@ -91,3 +91,23 @@ console.log(fruits.has("banana")); // true
 
 //Set stores: "apple", "banana" (no duplicates)
 //----------------------------------------------------------------------------------------------------------------------------------------------
+
+// how to give the phone number in the set
+let set = new Set();
+ set.add(9);
+  set.add(9);
+   set.add(7);
+    set.add(8);
+     set.add(6);
+      set.add(1);
+       set.add(3);
+        set.add(5);
+         set.add(4);
+          set.add(2);
+
+          for(s of  set){
+            console.log(set);
+          }
+
+          console.log(set.size);
+          
