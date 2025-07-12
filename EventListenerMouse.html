@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener mouse</title>
+  </head>
+  <body>
+    <button id="sj">Irukku</button>
+    <button id="love">I love U</button>
+  </body>
+  <script>
+    let btn = document.getElementById("sj");
+
+    btn.addEventListener("click", (event) => {
+      btn.textContent = " Aana illa";
+      console.log("clicked");
+    });
+
+    btn.addEventListener("mouseover", () => {
+      btn.textContent = "oruvela, erukumoo";
+      console.log("mouseover");
+    });
+
+    btn.addEventListener("mouseout", (event) => {
+      btn.textContent = " irukku";
+      console.log("mouseout");
+    });
+
+    //-------------=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-------------------------
+
+    let btn1 = document.getElementById("love");
+    btn1.addEventListener("click", (event) => {
+      btn1.textContent = "Thanks, I love U too";
+      console.log("clicked");
+    });
+
+    // for mouse hover
+
+    btn1.addEventListener("mouseover", (event) => {
+      // by clicking the button
+      btn1.textContent = "Thanks, I love U too";
+      console.log("clicked");
+    });
+
+    btn1.addEventListener("mouseout", (event) => {
+      // by mouse taking out
+      btn1.textContent = "Thanks, I love U too";
+      console.log("hover");
+    });
+
+    btn1.addEventListener("mouseout", (event) => {
+      btn1.textContent = " I hate you ";
+      console.log("mouseout");
+    });
+  </script>
+</html>

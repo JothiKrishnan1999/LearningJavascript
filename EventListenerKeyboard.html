@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Event Listerner Keyboard</title>
+</head>
+
+<body>
+   <button id="sj">1</button>
+   <button id="myButton">Click Me</button>
+
+</body>
+<script>
+   let btn = document.getElementById('sj');
+   document.addEventListener('keydown', (event) => {
+      console.log(event.key);
+      switch (event.key) {
+         case "ArrowUp":
+            btn.textContent = Number(btn.textContent) + 1;
+            break;
+         case "ArrowDown":
+            btn.textContent = Number(btn.textContent) - 1;
+            break;
+         }
+   });
+//here we do that click the button to change the color of the button
+//    document.getElementById("myButton").addEventListener("click", function() {
+//    this.style.backgroundColor = "green";
+// });
+
+document.getElementById("myButton").addEventListener("click", function() {
+  if (this.style.backgroundColor === "green") {
+    this.style.backgroundColor = "red";
+  } else {
+    this.style.backgroundColor = "green";
+  }
+});
+
+
+
+</script>
+
+</html>

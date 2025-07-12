@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Learning JS</title>
+</head>
+<body>
+
+   <h1 id = "head" >Coding </h1>
+   <div id = "box"> 
+
+   </div>
+
+   <p id="greet">Hello!</p>
+   <p class="name">I am JavaScript</p>
+   <p class="name">I love coding</p>
+
+   
+
+   <script>
+      
+      let element = document.getElementById("head");
+      element.textContent += "Learning Technology";
+      console.log(element.textContent);
+      
+      let element1 = document.getElementById("box");
+      let element11 = document.querySelector('hi');
+      element1.className = "bodyclass";
+      element1.innerHTML= '<p> Hi Hi Hi !!! </p>';
+      element1.style.color = 'red',
+      element1.style.backgroundColor = "lightgreen"; 
+      console.log(element1.innerHTML);
+
+
+      //------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+      
+      document.getElementById("greet").textContent = "Hi!";
+      document.getElementsByClassName("name")[0].style.color = "red";
+      document.querySelector(".name").style.fontWeight = "bold";
+      document.querySelectorAll(".name")[1].textContent = "You're awesome!";
+
+      
+   </script>
+<!-- 
+   | Selector                   | Description                                                                   | Example                                                                  |
+| -------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `getElementById()`         | Selects a single element by its ID                                            | `document.getElementById("myTitle")`                                     |
+| `getElementsByClassName()` | Selects all elements with a class (returns HTMLCollection)                    | `document.getElementsByClassName("box")`                                 |
+| `getElementsByTagName()`   | Selects all elements with a tag name (like `div`, `p`, `h1`)                  | `document.getElementsByTagName("p")`                                     |
+| `querySelector()`          | Selects **first** element that matches a CSS-style selector                   | `document.querySelector(".box")` or `document.querySelector("#myTitle")` |
+| `querySelectorAll()`       | Selects **all** elements that match the CSS-style selector (returns NodeList) | `document.querySelectorAll(".box")`                                      | -->
+
+
+<!-- getElementById("teddy") → Pick one teddy bear
+getElementsByClassName("ball") → Get all red balls
+getElementsByTagName("car") → Get all toy cars
+querySelector(".joystick") → Get the first joystick
+querySelectorAll(".gift") → Get all gift boxes -->
+
+
+</body>
+</html>
